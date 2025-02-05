@@ -1,10 +1,11 @@
 import { JwtPayload, jwtDecode } from 'jwt-decode';
-import { UserData } from '../interfaces/UserData';
+//import { UserData } from '../interfaces/UserData';
 
 class AuthService {
   getProfile() {
     // TODO: return the decoded token
-    return jwtDecode<UserData>(this.getToken());
+    console.log(jwtDecode(this.getToken()));
+    return jwtDecode(this.getToken());
   }
 
   loggedIn() {
@@ -26,17 +27,23 @@ class AuthService {
     }
   }
 
+  
+
   getToken(): string {
     // TODO: return the token
     const loggedUser = localStorage.getItem('id_token') || '';
+    console.log('loggedUser: ', loggedUser);
     return loggedUser;
   }
 
   login(idToken: string) {
     // TODO: set the token to localStorage
     localStorage.setItem('id_token', idToken);
+    console.log('hello', idToken)
     // TODO: redirect to the home page
-    window.location.assign('/');
+   
+   window.location.assign('/');
+   
   }
 
   logout() {

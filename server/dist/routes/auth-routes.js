@@ -23,7 +23,7 @@ export const login = async (req, res) => {
     secretKey, // Secret Key
     { expiresIn: '1h' } // Expiration
     );
-    // ✅ Return token response
+    // Return token response
     return res.json({
         message: 'Login successful!',
         access_token: token,
