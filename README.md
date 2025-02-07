@@ -40,33 +40,19 @@ A full-stack Kanban board application with JWT authentication, built using React
 
 ### Installation
 
-1. Clone the repository:
-```bash
-git clone [your-repository-url]
-cd kanban-board
-```
-
-2. Install dependencies:
+1. Install dependencies:
 ```bash
 
 npm install
 ```
 
-3. Set up environment variables:
-```bash 
-DB_NAME=''
-DB_USER=''
-DB_PASSWORD=''
-JWT_SECRET_KEY=''
-``` 
-
-4. Initialize the database:
+2. Initialize the database:
 ```bash
 cd server
 npm run seed
 ```
 
-5. Start the development servers:
+3. Start the development servers:
 ```bash
 cd server
 npm run build && npm start
@@ -85,9 +71,9 @@ Authentication Flow
 
 Users must log in with valid credentials
 JWT is stored securely in local storage
-Session expires after period of inactivity
+The session expires after a period of inactivity
 Protected routes require valid JWT
-Automatic redirect to login for unauthorized access
+Automatic redirect to log in for unauthorized access
 
 Deployment
 The application is deployed on Render:
@@ -95,7 +81,7 @@ The application is deployed on Render:
 Full stack: Web Service 
 Database: Render PostgreSQL
 
-Access the deployed application at: [[your-deployment-url](https://kanban-board-jx03.onrender.com)]
+Access the deployed application at: [kRAZY KANBAN (https://kanban-board-jx03.onrender.com)]
 Security Features
 
 Secure password hashing
@@ -106,8 +92,8 @@ SSL/TLS encryption in production
 Input validation and sanitization
 
 ## Contact
-GitHub: [Github](https://github.com/AOF-O5-1)
-Email: [marcusfajemisin.com](marcusfajemisin@gmail.com)
+GitHub: [AOF-05-1](https://github.com/AOF-O5-1)
+Email: [Ade Fajemisin](marcusfajemisin@gmail.com)
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
